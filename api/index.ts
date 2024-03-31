@@ -5,7 +5,7 @@ import express from 'express';
 import cors from 'cors';
 import http from 'http';
 
-import { climbTypes } from './climb';
+import { climbTypes } from './climb.js';
 
 const { AURA_ENDPOINT, USERNAME, PASSWORD } = process.env;
 
