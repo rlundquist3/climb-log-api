@@ -44,4 +44,8 @@ const startApolloServer = async (app, httpServer) => {
 
 startApolloServer(app, httpServer);
 
+if (process.env.NODE_ENV === 'development') {
+  app.listen(3000, () => console.log('Server started'));
+}
+
 export default httpServer;

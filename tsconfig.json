@@ -2,17 +2,21 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "outDir": "dist",
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "noImplicitAny": false,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
-    "rootDir": "src",
+    "rootDir": "api",
     "sourceMap": true,
     "strict": true,
     "target": "ES2020",
     "skipLibCheck": true
   },
-  "files": ["src/@types/gql.d.ts"],
-  "include": ["src/**/*"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
 }
