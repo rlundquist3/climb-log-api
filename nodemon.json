@@ -1,0 +1,10 @@
+{
+  "restartable": "rs",
+  "colours": true,
+  "ignore": [".git", "node_modules/", "dist/", "coverage/"],
+  "watch": ["api/"],
+  "execMap": {
+    "ts": "ts-node"
+  },
+  "ext": "json,ts"
+}
