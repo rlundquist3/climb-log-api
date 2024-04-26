@@ -7,6 +7,7 @@ export const climbTypes = gql`
     type: ClimbType
     grade: String
     sendDate: DateTime
+    source: Source
     createdAt: DateTime! @timestamp(operations: [CREATE])
     updatedAt: DateTime @timestamp(operations: [UPDATE])
   }
@@ -18,5 +19,9 @@ export const climbTypes = gql`
     alpine
     aid
     deepWaterSolo
+  }
+
+  enum Source {
+    inkdrop
   }
 `;
