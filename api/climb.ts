@@ -6,6 +6,7 @@ export const climbTypes = gql`
     name: String!
     type: ClimbType
     grade: String
+    sendDate: DateTime
     createdAt: DateTime! @timestamp(operations: [CREATE])
     updatedAt: DateTime @timestamp(operations: [UPDATE])
   }
